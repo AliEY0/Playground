@@ -14,7 +14,7 @@ int main() {
       val[i] = val[i] + (numbers[j][i - 10] - '0');
     }
   }
-
+  // cijferen
   for (int i = 60; i >= 1; i--) {
     while (val[i] >= 10) {
       val[i - 1]++;
