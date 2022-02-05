@@ -4,7 +4,6 @@ using namespace std;
 
 int main() {
   int ans = 0, streak = 0;
-  auto max = [](int a, int b) { return (a > b ? a : b); };
   map<long long, long long> m;
   m[1] = 1;
   for (long long j = 2; j <= 1000000; j++) {
