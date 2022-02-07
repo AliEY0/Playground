@@ -14,8 +14,7 @@ int main() {
     int tel = 0;
     for (int a = 1; a <= p; a++) {
       for (int b = a + 1; b <= p; b++) {
-        if (a * a + b * b ==
-            p * p + a * a + b * b - (2 * a * p) - (2 * b * p) + (2 * a * b)) {
+        if (a * a + b * b == (p - a - b) * (p - a - b)) {
           tel++;
         }
       }
