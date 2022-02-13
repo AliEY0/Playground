@@ -29,7 +29,7 @@ using namespace std;
 
 
   set<string> val;
-int Oplossing(int x) {
+void Oplossing(int x) {
     const int ROW = 100;
   const int COL = 205;
   int arr[ROW][COL];
@@ -43,27 +43,19 @@ int Oplossing(int x) {
       if (arr[i - 1][j] != 0)
         arr[i][j] += arr[i - 1][j] * x;
       // arr[i][j]++;
-      while (arr[i][j] >= 10) {
-        arr[i][j] -= 10;
-        arr[i][j - 1]++;
+      
+      if (arr[i][j] >= 10) {
+        arr[i][j - 1]+=(arr[i][j]/10);
+        arr[i][j] %= 10;
       }
     }
   }
-  int ans = 0;
   for (int i = 0; i < ROW; i++) {
     string s = "";
-    int in = 0;
-    for(int k = 0; k < COL; k++){
-        if(arr[i][k] != 0){
-            in = k;
-            break;
-        }
-    }
-    for (int j = in; j < COL; j++)
+    for (int j = 0; j < COL; j++)
         s += (arr[i][j]  + '0');
     val.insert(s);
   }
-  return val.size();
 }
 
 int main() {
