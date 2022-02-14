@@ -59,7 +59,7 @@ int main(){
     //8 * 59049 = 472392
     //9 * 59049 = 531441
     ll som = 0;
-    for(int i = 2; i <= 400000 ;i++){
+    for(int i = 2; i <= 999999;i++){
         if(isFifth(i)){
             som += i;
         }
