@@ -29,7 +29,14 @@ using namespace std;
 //Voor Meer informatie
 //https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html
 
-
+bool isPrime(int n){
+    if(n < 2)
+        return false;
+    for(int i = 2; i * i <= n; i++)
+        if(n % i == 0)
+            return false;
+    return true;
+}
 vector<int> sieve(int n){
     vector<bool> is_prime(n+1, true);
     vector<int> primes;
@@ -53,7 +60,13 @@ int main(){
     for(int i = 0 ;i < primeNumbers.size(); i++)
         cout << primeNumbers[i] << "\n";
     */
-    
+    //Test2
+    /*
+    for(int i = 0 ;i <10; i++){
+        if(isPrime(i))
+            cout << i << "\n";
+    }
+    */
     return 0;
 }
 
