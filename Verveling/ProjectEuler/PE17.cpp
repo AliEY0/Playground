@@ -78,13 +78,13 @@ int calc(int n){
 
 
 int main(){
-    //clock_t tStart = clock();
+    clock_t tStart = clock();
     int res = 0;
     for(int i = 1; i <= 1000; i++)
         res+=calc(i);
     
     cout << res << "\n";
-    //printf("\nTime taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
+    printf("\nTime taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
     return 0;
 }
 
