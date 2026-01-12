@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 
-
-
 void solve(std::string str, std::string sub, int index){
 
     

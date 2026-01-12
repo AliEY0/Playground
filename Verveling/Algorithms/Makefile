@@ -1,4 +1,4 @@
 all:
-	g++ Subset.cpp -o Subset
-	./Subset
-	rm Subset
+	g++ ValidParentheses.cpp -o ValidParentheses
+	./ValidParentheses
+	rm ValidParentheses
