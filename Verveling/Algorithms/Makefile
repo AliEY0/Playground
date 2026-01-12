@@ -1,4 +1,4 @@
 all:
-	g++ KnightTour.cpp -o KnightTour
-	./KnightTour
-	rm KnightTour
+	g++ Subset.cpp -o Subset
+	./Subset
+	rm Subset
