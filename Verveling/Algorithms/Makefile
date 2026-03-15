@@ -1,4 +1,4 @@
 all:
-	g++ ValidParentheses.cpp -o ValidParentheses
-	./ValidParentheses
-	rm ValidParentheses
+	g++ play.cpp -o play
+	./play
+	rm play
